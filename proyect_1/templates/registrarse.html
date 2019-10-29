@@ -24,8 +24,13 @@
   </head>
   <body style="background-color: darkslategray;">
   <div>
+    {% for message in get_flashed_messages() %}
+      <div class="alert alert-success alert-dismissible">
+        <button type="button" data-dismiss="alert" class="close">&times;</button>
+      {{message}}</div>
+    {% endfor %}
     <div class="form">
-      <form method= "post" action="/authenticate">
+      <form method= "post" action="/sign_up">
       <input name="username" type="text" placeholder="Username"/>
       <input name="email" type="text" placeholder="Enter your email"/>
       <input name="password" type="password" placeholder="Password"/>

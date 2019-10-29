@@ -53,11 +53,12 @@
       
           <div class="col-sm-9">
             <h4><small>TAREAS</small></h4>
-            {% for user in context_tareas%}
-                  <div class="alert alert-success alert-dismissible">
-                  <button type="button" data-dismiss="alert" class="close">&times;</button>
-              {{user.tarea}}</div>
-            {% endfor %}
+            {% if nueva_tarea%}
+            <form method= "post" action="/tareas_app/Crear_nueva_tarea">
+                    <input name="description" type="text" placeholder="Ingresa tu tarea"/>
+                    <input href="{{'Crear_nueva_tarea'}}" type="submit" value="Validar"/>
+            </form>
+            {% endif %}
 
       </div>
 </html>
