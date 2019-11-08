@@ -1,13 +1,13 @@
 body{
   margin: 0px;
   padding: 0px;
-  background: #D40A42;
+  background: darkslategrey;
 }
 
 .inner-screen{
   width: 800px;
   height: 340px;
-  background: #D40A42;
+  background: darkslategrey;
   margin: 0px auto;
   padding-top: 50px;
 }
@@ -15,7 +15,7 @@ body{
 .form{
   width: 400px;
   height: 230px;
-  background: #edeff1;
+  background: white;
   margin: 0px auto;
   padding-top: 20px;
   border-radius: 10px;
@@ -61,11 +61,11 @@ input[type="password"]:focus{
 
 input[type="submit"]{
   display: block;
-  background: #D40A42;
+  background:darkslategrey;
   width: 314px;
   padding: 12px;
   cursor: pointer;
-  color: #fff;
+  color:white;
   border: 0px;
   margin: auto;
   border-radius: 5px;
@@ -74,7 +74,7 @@ input[type="submit"]{
 }
 
 input[type="submit"]:hover{
-  background: #b00938
+  background:darkslategrey
 }
 
 a{
@@ -89,6 +89,6 @@ a{
 }
 
 a:hover{
-  color: #b00938;
+  color:darkslategrey;
 }
 
