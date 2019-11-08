@@ -283,4 +283,4 @@ def delete_group(id):
 
 if __name__ == '__main__':
     app.secret_key = ".."
-    app.run(debug=True,port=8000, threaded=True,use_reloader=False)
+    app.run(debug=True,port=8000, threaded=True)
